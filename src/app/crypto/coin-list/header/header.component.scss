@@ -1,0 +1,44 @@
+.banner{
+    background-image: url('../../../../assets/img/banner3.jpg');
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em; 
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        h1{
+            font-weight: 500;
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, .9)
+        }
+        p{
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+
+        .decorator{
+            width: 320px;
+            height: 2px;
+            background: rgba(#00BFA5, $alpha: .8);
+            border-radius: 2px;
+            position: relative;
+            left: 50px;
+            bottom: 10px;
+        }
+    }
+
+    .carousel{
+        height: 50%;
+        max-width: 90%;
+        
+    }
+}
+

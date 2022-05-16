@@ -1,0 +1,36 @@
+.container{
+    padding: 0 3rem;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+.card-details {
+    width: 40%;
+    height: 100%;
+    .card-body{
+        margin-top: 1rem;
+    }
+    .card-footer{
+        margin-top: 1rem;
+        span{
+            font-weight: 500;
+        }
+    }
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.separator{
+    background-color: #00BFA5;
+    width: 2px;
+}
+
+.coin-chart{
+    width: 50%;
+}

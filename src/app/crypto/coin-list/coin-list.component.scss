@@ -1,0 +1,24 @@
+.container{
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+table {
+    width: 100%;
+}
+  
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+  
+td, th {
+    width: 25%;
+}
+
+.table-coin{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: 1em 0;
+}

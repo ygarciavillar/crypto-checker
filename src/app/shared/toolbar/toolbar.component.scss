@@ -1,0 +1,19 @@
+.xxx {
+    padding: 0 2rem;
+  
+    .toolbar-spacer{
+      flex: 1 1 auto;
+    }
+    
+    .toggle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1.5em;
+      gap: .2em;
+    }
+    
+    .currency-selector{
+      max-width: 7rem;
+    }
+  }

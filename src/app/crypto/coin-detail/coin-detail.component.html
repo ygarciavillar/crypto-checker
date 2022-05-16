@@ -1,0 +1,35 @@
+<section class="container">
+    <div class="wrapper" *ngIf="selectedCurrency$ | async as currrency" >
+        <mat-card class="card-details">
+            <mat-card-header class="details-header">
+                <img  mat-card-avatar [src]="coin.image" alt="coin.id">
+                <mat-card-title>{{coin.name}}</mat-card-title>
+                <mat-card-subtitle>Rank {{coin.market_data.market_cap_rank}}</mat-card-subtitle>
+            </mat-card-header>
+                <mat-card-content>
+                    <p class="card-body"  [innerHtml]="coin.description.en.split('. ')[0]"></p> 
+                    <mat-divider [inset]="true"></mat-divider>
+                    <div  class="card-footer">
+                        <p>Current Price: 
+                            <span class="accent-color"> {{ setCurrency(coin.market_data.current_price, currrency) |  currency: (currrency| uppercase)}}</span>
+                        </p>
+                        <p>Market Cap:
+                            <span class="accent-color"> {{ setCurrency(coin.market_data.market_cap, currrency) |  currency: (currrency | uppercase)}}</span>
+                        </p>
+                    </div>
+                </mat-card-content>
+        </mat-card>
+         
+        <mat-divider [vertical]="true" class="separator"></mat-divider>
+
+        <div class="coin-chart">
+            <app-coin-chart [coinId]="coin.id" [currency]="currrency"></app-coin-chart>
+        </div>
+    </div>
+
+    <button mat-raised-button color="accent" [routerLink]="['/']" class="btn-back">
+        <mat-icon>home</mat-icon> 
+        Go Home
+    </button>
+    
+</section>

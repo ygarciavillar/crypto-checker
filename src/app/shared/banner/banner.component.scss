@@ -1,0 +1,25 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+.card{
+    width: 100px;
+    padding: 10px;
+    margin: 0 2rem;
+    background: transparent;
+    border: 0;
+    z-index: 0;
+    img{
+      width: 60px;
+      margin: 0 auto;
+    }
+    .content{
+        h5{
+            margin: 0;
+            .alert{
+                color: #ff4242;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Custom Theming for Angular Material
+@import '../src/app/material/material.scss';
+
+@import '~@angular/material/theming';
+
+/* Global styles*/
+*, 
+::after , 
+::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {font-size: 100%;} /*16px*/
+
+:root {
+
+  /* fonts */
+  --headingFont: Roboto, "Helvetica Neue", sans-serif;
+  --bodyFont: Roboto, "Helvetica Neue", sans-serif;
+  --smallText: 0.8em;
+ /* others variables */
+ --letterSpacing: 1px;
+ --max-width: 1120px;
+ --fixed-width: 600px;
+}
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+p{
+  margin-bottom: 1.5rem;
+  max-width: 40rem;
+}
+
+a{
+  text-decoration: none;
+  color: mat-color($ligth-primary) !important;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+.accent-color {
+  color: mat-color($ligth-accent) !important;
+}
+
+.primary-color {
+  color: mat-color($ligth-primary) !important;
+}
+
+.warn-color{
+  color: mat-color($ligth-warn) !important;
+}
